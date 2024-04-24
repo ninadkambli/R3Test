@@ -1,15 +1,9 @@
 # R3Test
-
-I have created below 4 scenarios 
-1)  Validate Resonse is failed.
-    In this test I am passing wrong API path to get status code 404. I validated API is failed.
-2)  Validate Response is passed.
-    Here I have passed the correct API path to get status code 200 and check API is passed.
-3)  Validate AED Price.
-    I have written a parameterized step where I passsed Currency and Price-range as the parameters. This step can be used to validate price range from API response for any currency.
-4) Validate total 162 currency pairs.
-   I have validated in API respons we should have 162 currencies.
-5) Validate JSON Schema.
-   I copied response of the API https://open.er-api.com/v6/latest/USD and generated JSON Schema and stored in the file usdPriceSchema.json under resounces/jsonSchema folder. Validated schema of the response against that file.
+I have created below scenarios.
+1) Verify Failed Response: In this test, an incorrect API path is provided intentionally to receive a status code of 404, confirming the failure of the API call.
+2) Confirm Successful Response: Here, the correct API path is supplied to obtain a status code of 200, ensuring that the API call is successful.
+3) Validate AED Price: This scenario involves a parameterized step where Currency and Price-range are passed as parameters. It allows for the validation of price ranges from the API response for any currency.
+4) Verify 162 Currency Pairs: The API response is scrutinized to ensure that it contains information for all 162 currency pairs.
+5) Validate JSON Schema: The response from the API endpoint "https://open.er-api.com/v6/latest/USD" is utilized to generate a JSON Schema, which is then stored in the file "usdPriceSchema.json" under the "resources/jsonSchema" folder. The schema of the response is compared against this file to validate its structure.
 
    All scripts can be executed in parallel.
